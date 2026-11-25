@@ -1,244 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>A.K. Vidya Sri | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Vidya Sri AK — Java and Full Stack Developer.">
+  <title>Vidya Sri AK | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="page-glow glow-one"></div><div class="page-glow glow-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Vidya Sri home"><span class="brand-mark">V.</span><span>VIDYA SRI <small>DEVELOPER PORTFOLIO</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a>
+      <a href="#projects">Projects</a><a href="#certificates">Certificates</a><a href="#contact" class="nav-contact">Let's talk ↗</a>
+    </nav>
+  </header>
 
-<!-- NAVBAR -->
-<nav>
-    <h2 class="logo">Vidya ✨</h2>
-    <div class="nav-buttons">
-        <button onclick="scrollToSection('home')">Home</button>
-        <button onclick="scrollToSection('about')">About</button>
-        <button onclick="scrollToSection('academics')">Academics</button>
-        <button onclick="scrollToSection('skills')">Skills</button>
-        <button onclick="scrollToSection('projects')">Projects</button>
-        <button onclick="scrollToSection('certificates')">Certificates</button>
-        <button onclick="scrollToSection('contact')">Contact</button>
-        <button onclick="toggleDarkMode()">🌙</button>
-    </div>
-</nav>
-
-<!-- FLOATING TOP BUTTON -->
-<button class="top-btn" onclick="scrollToSection('home')">⬆</button>
-
-<!-- MY SECTION -->
-<section id="home" class="hero">
-    <div class="particles"></div>
-    <div class="hero-content">
-        <img src="images/vidyasri_photo.jpeg" alt="Vidya Sri" class="profile-pic">
-        <h1 class="typing"></h1>
-        <p class="fade-in">3rd year Computer Science student aspiring Android App Developer & Software Developer, actively preparing for internships and campus placements.</p>
-        <button class="hero-btn" onclick="scrollToSection('projects')">
-            View My Work 🚀
-        </button>
-    </div>
-</section>
-
-
-<!-- ABOUT -->
-<section id="about" class="reveal">
-    <h2>About Me 🌟</h2>
-    <div class="about-grid">
-
-        <!-- Strengths -->
-        <div class="about-card">
-            <h3>✨ Strengths</h3>
-            <ul>
-                <li>Logical thinker & problem solver</li>
-                <li>Curious & always learning new tech</li>
-                <li>Team player with leadership experience</li>
-                <li>Organized and detail-oriented</li>
-            </ul>
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> FINAL-YEAR CSE STUDENT · INDIA</p>
+        <h1>Building ideas<br>into <span class="gradient-text">real-world</span><br>experiences<span class="accent-dot">.</span></h1>
+        <p class="hero-intro">Hi, I'm <strong>Vidya Sri AK</strong> — an aspiring Java and Full Stack Developer who enjoys creating useful, user-friendly web applications and learning how technology works behind the scenes.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my work <span>↗</span></a><a class="text-link" href="#contact">Get in touch <span>→</span></a></div>
+        <div class="hero-meta"><span>JAVA</span><i></i><span>SPRING BOOT</span><i></i><span>REACT</span><i></i><span>POSTGRESQL</span></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="photo-frame"><div class="photo-topline"><span>PROFILE / 2026</span><span>01 — 04</span></div>
+          <img src="images/profile-photo.jpg" alt="Portrait of Vidya Sri">
+          <div class="photo-caption"><span>VIDYA SRI AK</span><span>JAVA · FULL STACK</span></div>
         </div>
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="floating-tag tag-code"><span>{ }</span> Code with purpose</div>
+        <div class="floating-tag tag-location">✳ &nbsp; Always learning</div>
+      </div>
+      <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+    </section>
 
-        <!-- Areas to Improve -->
-        <div class="about-card">
-            <h3>⚡ Areas to Improve</h3>
-            <ul>
-                <li>Can spend too much time perfecting small details</li>
-                <li>Improving public speaking & presenting technical ideas</li>
-            </ul>
-        </div>
+    <section class="section-wrap about-section" id="about">
+      <div class="section-heading reveal"><p class="eyebrow">01 / A LITTLE ABOUT ME</p><h2>Curious mind.<br><span class="muted">Builder's mindset.</span></h2></div>
+      <div class="about-content reveal"><p class="large-copy">I’m a Computer Science student interested in turning concepts into practical applications. I enjoy working across the stack — from shaping a clean interface to building the Java logic and connecting it to a database.</p><p class="body-copy">I’m currently strengthening my skills in Java, Spring Boot, React and database development. I value steady learning, thoughtful problem-solving and writing work that is easy to understand and maintain.</p>
+        <div class="quick-facts"><div><strong>2027</strong><span>Expected graduation</span></div><div><strong>8.46</strong><span>Current CGPA</span></div><div><strong>2</strong><span>Oracle certifications</span></div></div>
+      </div>
+    </section>
 
-        <!-- Hobbies -->
-        <div class="about-card">
-            <h3>🎯 Hobbies & Interests</h3>
-            <ul>
-                <li>Coding challenges & app development</li>
-                <li>Reading tech blogs & exploring AI innovations</li>
-                <li>Designing creative solutions & experimenting with projects</li>
-            </ul>
-        </div>
+    <section class="section-wrap education-section" id="education">
+      <div class="section-heading reveal"><p class="eyebrow">02 / EDUCATION</p><h2>Where I’m <span class="gradient-text">learning.</span></h2></div>
+      <article class="education-card reveal"><div class="edu-year">UNDERGRADUATE</div><div><h3>B.E. Computer Science and Engineering</h3><p>Mahendra Engineering College for Women</p><span class="edu-note">Expected graduation · 2027</span></div><div class="cgpa"><strong>8.46</strong><span>CGPA</span></div></article>
+<article class="education-card reveal">
+  <div class="edu-year">HIGHER SECONDARY</div>
+  <div>
+    <h3>12th Standard</h3>
+    <p>Masathiyar Corporation Girls Higher Secondary School</p>
+  </div>
+  <div class="cgpa">
+    <strong>79.16</strong>
+    <span>Percentage</span>
+  </div>
+</article>     </section>
 
-    </div>
-</section>
+    <section class="section-wrap skills-section" id="skills">
+      <div class="section-heading reveal"><p class="eyebrow">03 / MY TOOLKIT</p><h2>Tools I use to<br><span class="muted">make things work.</span></h2></div>
+      <div class="skill-grid">
+        <article class="skill-card reveal"><span class="skill-index">01</span><h3>Programming</h3><div class="chips"><span>Java</span><span>JavaScript</span><span>Python (Basic)</span></div></article>
+        <article class="skill-card reveal"><span class="skill-index">02</span><h3>Frontend</h3><div class="chips"><span>HTML</span><span>CSS</span><span>React.js (Foundation)</span></div></article>
+        <article class="skill-card reveal"><span class="skill-index">03</span><h3>Backend & Data</h3><div class="chips"><span>Spring Boot</span><span>JDBC</span><span>JPA / Hibernate</span><span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span></div></article>
+        <article class="skill-card reveal"><span class="skill-index">04</span><h3>Tools & Cloud</h3><div class="chips"><span>Git</span><span>GitHub</span><span>AWS</span><span>Node.js</span></div></article>
+      </div>
+    </section>
 
+    <section class="section-wrap projects-section" id="projects">
+      <div class="section-heading reveal"><p class="eyebrow">04 / SELECTED WORK</p><h2>Things I’ve <span class="gradient-text">built.</span></h2></div>
+      <div class="project-grid">
+        <article class="project-card project-featured reveal"><div class="project-top"><span>01 / FULL STACK</span><span class="project-symbol">↗</span></div><div class="project-art campus-art"><div class="art-window"><div class="window-dots">● ● ●</div><div class="mock-sidebar"></div><div class="mock-content"><i></i><i></i><i></i><b></b></div></div><span class="art-label">CAMPUS / MANAGEMENT</span></div><div class="project-info"><h3>College Management System</h3><p>A college-focused management application designed to organize student, faculty and course information with role-based access.</p><div class="project-tags"><span>Java</span><span>Spring Boot</span><span>React.js</span><span>PostgreSQL</span></div><a class="project-link" href="https://github.com/VidyaSriKumaran/CollegeManagementSystem" target="_blank" rel="noopener">View on GitHub <span>↗</span></a></div></article>
+        <article class="project-card reveal"><div class="project-top"><span>02 / WEB DEVELOPMENT</span><span class="project-symbol">↗</span></div><div class="project-art recipe-art"><div class="recipe-circle">RECIPE<br><b>BOOK</b></div><span class="art-label">DISCOVER · COOK · ENJOY</span></div><div class="project-info"><h3>Recipe Management Website</h3><p>A website for discovering recipes and exploring food ideas through a simple web experience.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a class="project-link" href="https://recepimakejuzupee.netlify.app/" target="_blank" rel="noopener">View live website <span>↗</span></a></div></article>
+        <article class="project-card reveal"><div class="project-top"><span>03 / PROJECT</span><span class="project-symbol">✳</span></div><div class="project-art ev-art"><div class="ev-bolt">ϟ</div><span class="art-label">CHARGE THE NEXT MILE</span></div><div class="project-info"><h3>EV Charging Stations</h3><p>A project focused on electric vehicle charging station information.</p><div class="project-tags"><span>Project</span><span>EV</span></div><span class="project-note">Project overview</span></div></article>
+      </div>
+    </section>
 
-<!-- ACADEMICS -->
-<section id="academics" class="reveal">
-    <h2>Academic Background 🎓</h2>
-    <p class="academic-intro">
-        My academic journey reflects consistent learning, strong fundamentals,
-        and a growing interest in Computer Science and technology.
-    </p>
-    <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>Qualification</th>
-                    <th>Institution</th>
-                    <th>Board / University</th>
-                    <th>Year of Completion</th>
-                    <th>Percentage / CGPA</th>
-                    <th>Key Highlights</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>SSLC</td>
-                    <td>Masathiyar Corporation Girls Higher Secondary School</td>
-                    <td>State Board</td>
-                    <td>2020–21</td>
-                    <td>–</td>
-                    <td>Strong foundation in Mathematics and Science</td>
-                </tr>
-                <tr>
-                    <td>HSC</td>
-                    <td>Masathiyar Corporation Girls Higher Secondary School</td>
-                    <td>State Board</td>
-                    <td>2021–2023</td>
-                    <td>79.16%</td>
-                    <td>Excelled in Mathematics and analytical subjects</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="academic-summary">
-        <h3>Academic Focus & Skills Developed</h3>
-        <ul>
-            <li>✔ Strong analytical and logical reasoning skills</li>
-            <li>✔ Good understanding of Mathematics and Computer Science basics</li>
-            <li>✔ Hands-on experience in Python and problem-solving</li>
-            <li>✔ Consistent academic performance and learning attitude</li>
-            <li>✔ Prepared for software development, Android development, and AI applications</li>
-        </ul>
-    </div>
-</section> 
+    <section class="section-wrap certificates-section" id="certificates">
+      <div class="section-heading reveal"><p class="eyebrow">05 / LEARNING MILESTONES</p><h2>Proof of <span class="gradient-text">progress.</span></h2><p class="section-description">A selection of certificates, training and participation records from my learning journey.</p></div>
+      <div class="certificate-grid" id="certificateGrid">
+        <button class="certificate-card reveal" data-image="images/certificate-12.jpg" data-title="Oracle Certified Foundations Associate"><img src="images/certificate-12.jpg" alt="Oracle certification"><span>Oracle Certified Foundations Associate</span></button>
+        <button class="certificate-card reveal" data-image="images/certificate-13.jpg" data-title="Oracle Certified Foundations Associate"><img src="images/certificate-13.jpg" alt="Oracle certification"><span>Oracle Certified Foundations Associate</span></button>
+        <button class="certificate-card reveal" data-image="images/certificate-08.jpg" data-title="Tech Spark 2K24"><img src="images/certificate-08.jpg" alt="Tech Spark certificate"><span>Tech Spark 2K24 · Paper Presentation</span></button>
+        <button class="certificate-card reveal" data-image="images/certificate-07.jpg" data-title="AI and ML Workshop"><img src="images/certificate-07.jpg" alt="AI and ML workshop certificate"><span>AI & ML Workshop</span></button>
+        <button class="certificate-card reveal" data-image="images/certificate-09.jpg" data-title="Student Development Programme"><img src="images/certificate-09.jpg" alt="Student development certificate"><span>Student Development Programme</span></button>
+        <button class="certificate-card reveal" data-image="images/certificate-10.jpg" data-title="Full Stack Development Internship"><img src="images/certificate-10.jpg" alt="Internship certificate"><span>Full Stack Development Internship</span></button>
+        <button class="certificate-card reveal" data-image="images/certificate-11.jpg" data-title="Internship Certificate"><img src="images/certificate-11.jpg" alt="Internship certificate"><span>Internship Training</span></button>
+        <button class="certificate-card reveal" data-image="images/certificate-14.jpg" data-title="Cloud Computing Internship"><img src="images/certificate-14.jpg" alt="Cloud computing certificate"><span>Cloud Computing Internship</span></button>
+        <button class="certificate-card reveal" data-image="images/certificate-15.jpg" data-title="Certificate of Completion"><img src="images/certificate-15.jpg" alt="Certificate of completion"><span>Certificate of Completion</span></button>
+        <button class="certificate-card reveal" data-image="images/certificate-01.jpg" data-title="NPTEL Cloud Computing"><img src="images/certificate-01.jpg" alt="NPTEL Cloud Computing certificate"><span>NPTEL · Cloud Computing</span></button>
+        <button class="certificate-card reveal" data-image="images/certificate-19.jpg" data-title="NPTEL Programming in Java"><img src="images/certificate-19.jpg" alt="NPTEL Java certificate"><span>NPTEL · Programming in Java</span></button>
+        <button class="certificate-card reveal" data-image="images/certificate-02.jpg" data-title="Innovation Ambassador Programme"><img src="images/certificate-02.jpg" alt="Innovation Ambassador certificate"><span>Innovation Ambassador Programme</span></button>
+        <button class="certificate-card reveal" data-image="images/certificate-03.jpg" data-title="Innovation Ambassador Programme"><img src="images/certificate-03.jpg" alt="Innovation Ambassador certificate"><span>Innovation Ambassador Programme</span></button>
+        <button class="certificate-card reveal" data-image="images/certificate-04.jpg" data-title="Innovation Ambassador Programme"><img src="images/certificate-04.jpg" alt="Innovation Ambassador certificate"><span>Innovation Ambassador Programme</span></button>
+        <button class="certificate-card reveal" data-image="images/certificate-05.jpg" data-title="Innovation Ambassador Programme"><img src="images/certificate-05.jpg" alt="Innovation Ambassador certificate"><span>Innovation Ambassador Programme</span></button>
+        <button class="certificate-card reveal" data-image="images/certificate-16.jpg" data-title="Hackathon Participation"><img src="images/certificate-16.jpg" alt="Hackathon certificate"><span>Hackathon Participation</span></button>
+        <button class="certificate-card reveal" data-image="images/certificate-17.jpg" data-title="Technical Symposium"><img src="images/certificate-17.jpg" alt="Symposium certificate"><span>Technical Symposium</span></button>
+        <button class="certificate-card reveal" data-image="images/certificate-18.jpg" data-title="Certificate of Training"><img src="images/certificate-18.jpg" alt="Training certificate"><span>Certificate of Training</span></button>
+      </div>
+    </section>
 
-<!-- SKILLS -->
-<section id="skills" class="reveal">
-    <h2>Technical Skills 💻</h2>
-    <div class="skills-container">
-        <div class="skill-card">Python</div>
-        <div class="skill-card">Java</div>
-        <div class="skill-card">C</div>
-        <div class="skill-card">Android Studio</div>
-        <div class="skill-card">Kotlin</div>
-        <div class="skill-card">JetPackCompose</div>
-        <div class="skill-card">HTML</div>
-        <div class="skill-card">CSS</div>
-        <div class="skill-card">JavaScript</div>
-        <div class="skill-card">Git / GitHub</div>
-        <div class="skill-card">OOPS / DBMS / DSA</div>
-        <div class="skill-card">Basics of AI / ML</div>
-        
-    </div>
-</section>
+    <section class="contact-section" id="contact"><div class="section-wrap contact-inner reveal"><p class="eyebrow">06 / HAVE A ROLE OR IDEA?</p><h2>Let’s make<br><span class="gradient-text">something useful.</span></h2><p>I’m open to opportunities to learn, contribute and grow as a Java or Full Stack Developer.</p><a class="button button-primary" href="mailto:kumaranvidyasri@gmail.com">Say hello <span>↗</span></a><div class="contact-links"><a href="mailto:kumaranvidyasri@gmail.com"><span>EMAIL</span>kumaranvidyasri@gmail.com ↗</a><a href="https://www.linkedin.com/in/vidyasrikumaran/" target="_blank" rel="noopener"><span>LINKEDIN</span>linkedin.com/in/vidyasrikumaran ↗</a><a href="https://github.com/VidyaSriKumaran" target="_blank" rel="noopener"><span>GITHUB</span>github.com/VidyaSriKumaran ↗</a></div></div></section>
+  </main>
+  <footer><span>© <span id="year"></span> VIDYA SRI AK</span><span>DESIGNED & BUILT WITH CURIOSITY ✳</span><a href="#home">BACK TO TOP ↑</a></footer>
 
-<!-- PROJECTS -->
-<section id="projects" class="reveal">
-    <h2>Projects 🚀</h2>
-    <div class="card-container">
-        <div class="card glow">
-            <h3>Food / Recipe Website</h3>
-            <p>Interactive website for browsing food recipes.</p>
-            <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Netlify</p>
-            <a href="https://recepimakejuzupee.netlify.app/" target="_blank" class="btn-link">Live Demo</a>
-        </div>
-    </div>
-</section>
-
-<!-- CERTIFICATES -->
-<section id="certificates" class="reveal">
-    <h2>Certificates & Achievements 🏆</h2>
-    <div class="cert-grid">
-
-        <div class="cert-card glow">
-            <img src="images/Techspark_certificate.jpeg" alt="Tech Spark 2K24">
-            <h4>1st Prize – Tech Spark 2K24</h4>
-            <p>Generative AI | Annai Mathammal Sheela Engineering College</p>
-        </div>
-
-        <div class="cert-card glow">
-            <img src="images/Workshop_certificate.jpeg" alt="AI Workshop">
-            <h4>AI & ML Workshop</h4>
-            <p>Excel Engineering College | 2-Day Workshop</p>
-        </div>
-
-        <div class="cert-card glow">
-            <img src="images/student_development_certificate.jpeg" alt="Student Development Program">
-            <h4>Student Development Program</h4>
-            <p>AI Innovators Hub | 6-Day Program</p>
-        </div>
-
-        <div class="cert-card glow">
-            <img src="images/elysium_certificate.jpeg" alt="Fullstack Internship">
-            <h4>Full-Stack Development Internship</h4>
-            <p>Elysium Technologies</p>
-        </div>
-
-        <div class="cert-card glow">
-            <img src="images/marcello_certifcate.jpeg" alt="marcello Internship">
-            <h4>Full-Stack & Web Development Internship</h4>
-            <p>Marcello Tech</p>
-        </div>
-
-        <div class="cert-card glow">
-            <img src="images/AWS_intern_certificate.jpeg" alt="Elewayte Internship">
-            <h4>AWS Cloud Computing Internship</h4>
-            <p>Elewayte Cloud Computing</p>
-        </div>
-
-        <div class="cert-card glow">
-            <img src="images/ambassador_certificate.jpeg" alt="Innovation Ambassador">
-            <h4>Innovation Ambassador Program</h4>
-            <p>Foundation / Advanced / Reskilling</p>
-        </div>
-
-        <div class="cert-card glow">
-            <img src="images/nptel_certificate.jpeg" alt="NPTEL Java">
-            <h4>NPTEL – Programming in Java</h4>
-            <p>Elite Silver | Score: 76%</p>
-        </div>
-
-    </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="reveal">
-    <h2>Contact Me 📬</h2>
-    <p>Email: <a href="mailto:kumaranvidyasri@gmail.com">kumaranvidyasri@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/vidyasrikumaran/" target="_blank">Vidya Sri</a></p>
-    <p>GitHub: <a href="https://github.com/VidyaSri-project-work" target="_blank">VidyaSri-project-work</a></p>
-  
-
-    <!-- Download Resume Button -->
-<a href="https://1drv.ms/f/c/1b4b5cc4462d6983/IgD3eWh8oxG3RJaYljrOpzv7AY4uRwklm7fbGskalTNeiS4?e=9qIdej" download="VidyaSri_Resume.pdf" class="resume-btn">
-    Download Resume 📄
-</a>
-
-</section>
-
-<script src="script.js"></script>
+  <div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox-close" id="lightboxClose" aria-label="Close certificate">×</button><img id="lightboxImage" src="" alt=""><p id="lightboxTitle"></p></div>
+  <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
